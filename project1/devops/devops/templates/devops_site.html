@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissy Fashions</title>
+	{%load static%}
+<style>
+* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #f2b632;
+    border-radius: 5px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: #e9ecef;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.fashion-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.fashion-item {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+}
+
+.fashion-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #333;
+}
+
+.fashion-item p {
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.about-section, .contact-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fff;
+    margin: 2rem 0;
+}
+
+.about-section h2, .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Blissy Fashions</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-section">
+            <h2>Welcome to Blissy Fashions</h2>
+            <p>Explore the latest trends in fashion</p>
+        </div>
+        <div class="fashion-gallery">
+            <div class="fashion-item">
+                <img src="fashion1.jpeg" alt="Fashion 1">
+                <p>Elegant Evening Gown</p>
+            </div>
+            <div class="fashion-item">
+                <img src="fashion3.jpeg" alt="Fashion 3">
+                <p>Chic Summer Dress</p>
+            </div>
+            <div class="fashion-item">
+                <img src="fashion3.jpg" alt="Fashion 3">
+                <p>Bubu dress</p>
+            </div>
+            <div class="fashion-item">
+                <img src="fashion4.jpg" alt="Fashion 4">
+                <p>Corporate Outfit</p>
+            </div>
+			<div class="fashion-item">
+                <img src="fashion5.jpg" alt="Fashion 5">
+                <p>Custom made croset</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-section">
+            <h2>About Blissy Fashions</h2>
+            <p>Blizzy Fashions brings you the latest and most stylish trends from around the world. From casual wear to designer gowns, we offer an array of fashion items that suit every taste and occasion.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>For inquiries, feel free to reach out:</p>
+            <p>Email: info@blizzyfashions.com</p>
+            <p>Phone: +2349012251940</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Blizzy Fashions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
